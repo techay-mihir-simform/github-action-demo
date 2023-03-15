@@ -1,5 +1,4 @@
 name: "Tests: E2E"
-on: deployment_status
 jobs:
   test:
     name: getpreview
