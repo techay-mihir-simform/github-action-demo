@@ -14,6 +14,6 @@ jobs:
       
       - name: get json
         run: |
-          echo "hello"
-          echo "by"
+          json_var=`cat output.json`
+          echo $json_var
      
