@@ -1,0 +1,12 @@
+name: "Tests: E2E"
+on: deployment_status
+jobs:
+  test:
+    name: getpreview
+    runs-on: ubuntu-latest
+    steps:
+      - name: vercel-preview-url
+        id: urls
+        run: | 
+          content=$(curl "https://api.vercel.com/v6/deployments?teamId=team_mbfhe0tY0jWV2J3KQS6igAR4&projectId=prj_B0FS2xq5WAiuEeam4As2yjvY9FHs&limit=1" -H "Authorization: Bearer SSwZDyA77Dri38esqNmHRKsM")
+     
