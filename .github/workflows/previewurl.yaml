@@ -1,4 +1,7 @@
 name: "Tests: E2E"
+on:
+  push: 
+    branches: [ main ]
 jobs:
   test:
     name: getpreview
