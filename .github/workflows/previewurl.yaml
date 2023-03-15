@@ -15,5 +15,6 @@ jobs:
       - name: get json
         run: |
           json_var=`cat output.json`
-          echo $json_var
+          url_var=$(echo $json_var | jq '.deployments[0].url')
+          echo $url_var
      
