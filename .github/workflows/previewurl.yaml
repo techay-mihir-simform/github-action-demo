@@ -13,5 +13,7 @@ jobs:
           curl "https://api.vercel.com/v6/deployments?teamId=team_mbfhe0tY0jWV2J3KQS6igAR4&projectId=prj_B0FS2xq5WAiuEeam4As2yjvY9FHs&limit=1" -H "Authorization: Bearer SSwZDyA77Dri38esqNmHRKsM" -o output.json
       
       - name: get json
-        run: jq '.[] | .deployments[0].url' output.json
+        run: |
+          echo "hello"
+          echo "by"
      
